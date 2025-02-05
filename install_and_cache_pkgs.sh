@@ -107,5 +107,6 @@ log "done (total cache size $(du -h ${cache_dir} | tail -1 | awk '{print $1}'))"
 log_empty_line
 
 log "I'm will weten of ik deze vesie kan runner vanuit mijn pr"
+sudo chmod -R 777 ${cache_dir}
 
 write_manifest "all" "${manifest_all}" "${cache_dir}/manifest_all.log"
